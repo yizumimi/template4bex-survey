@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="100" viewBox="0 0 180 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_442" data-name="長方形 442" width="42" height="71" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_rikaconsumable" transform="translate(582 -616)">
+    <rect id="長方形_1110" data-name="長方形 1110" width="180" height="100" transform="translate(-582 616)" fill="none"/>
+    <g id="理化学消耗品" transform="translate(-513 631)">
+      <rect id="長方形_440" data-name="長方形 440" width="42" height="8" transform="translate(0 11)" fill="#fff"/>
+      <g id="グループ_79" data-name="グループ 79">
+        <g id="グループ_78" data-name="グループ 78" clip-path="url(#clip-path)">
+          <rect id="長方形_441" data-name="長方形 441" width="27" height="50" transform="translate(7 19)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="4"/>
+        </g>
+      </g>
+      <rect id="長方形_443" data-name="長方形 443" width="13" height="11" transform="translate(14)" fill="#fff"/>
+      <rect id="長方形_444" data-name="長方形 444" width="8" height="28" transform="translate(9 39)" fill="#fff"/>
+      <path id="パス_341" data-name="パス 341" d="M8.845,24,9,39h7.993Z" fill="#fff"/>
+      <rect id="長方形_445" data-name="長方形 445" width="8" height="28" transform="translate(24.423 39)" fill="#fff"/>
+      <path id="パス_342" data-name="パス 342" d="M32.577,24,32.42,39H24.427Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="100" viewBox="0 0 180 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_434" data-name="長方形 434" width="72.841" height="88.896" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_accessory" transform="translate(982 -616)">
+    <rect id="長方形_1110" data-name="長方形 1110" width="180" height="100" transform="translate(-982 616)" fill="none"/>
+    <g id="ケーブル" transform="translate(-928 622)">
+      <g id="グループ_73" data-name="グループ 73" clip-path="url(#clip-path)">
+        <path id="パス_331" data-name="パス 331" d="M37.081,86.719S87.907,38.551,62.944,13.587s-45.99,2.053-45.99,2.053" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="6"/>
+        <rect id="長方形_426" data-name="長方形 426" width="15" height="12" transform="translate(4.743 19.379) rotate(-45)" fill="#fff"/>
+        <rect id="長方形_427" data-name="長方形 427" width="15" height="12" transform="translate(4.743 19.379) rotate(-45)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+        <rect id="長方形_428" data-name="長方形 428" width="10.5" height="3" transform="translate(0.5 29.986) rotate(-45)" fill="#fff"/>
+        <rect id="長方形_429" data-name="長方形 429" width="10.5" height="3" transform="translate(0.5 29.986) rotate(-45)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+        <path id="パス_332" data-name="パス 332" d="M31.429,71.168S68.233,35.847,54.3,21.916,19.378,33.355,19.378,33.355" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="6"/>
+        <rect id="長方形_430" data-name="長方形 430" width="15" height="12" transform="translate(5.45 38.471) rotate(-45)" fill="#fff"/>
+        <rect id="長方形_431" data-name="長方形 431" width="15" height="12" transform="translate(5.45 38.471) rotate(-45)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+        <rect id="長方形_432" data-name="長方形 432" width="10.5" height="3" transform="translate(1.207 49.077) rotate(-45)" fill="#fff"/>
+        <rect id="長方形_433" data-name="長方形 433" width="10.5" height="3" transform="translate(1.207 49.077) rotate(-45)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

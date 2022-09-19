@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="100" viewBox="0 0 180 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_425" data-name="長方形 425" width="122.56" height="62" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_injector" transform="translate(1182 -616)">
+    <rect id="長方形_1110" data-name="長方形 1110" width="180" height="100" transform="translate(-1182 616)" fill="none"/>
+    <g id="インジェクター" transform="translate(-1153 635)">
+      <path id="パス_323" data-name="パス 323" d="M47.56,28.894l75,5.951v-11.9Z" fill="#fff"/>
+      <g id="グループ_71" data-name="グループ 71">
+        <g id="グループ_70" data-name="グループ 70" clip-path="url(#clip-path)">
+          <path id="パス_324" data-name="パス 324" d="M60.013,38.663a30,30,0,1,1-.471-16.925" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+          <path id="パス_325" data-name="パス 325" d="M55.492,36.038a25,25,0,1,1-.238-11.124" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+          <path id="パス_326" data-name="パス 326" d="M44.25,22.75c0,5.523-6.716,10-15,10s-15-4.477-15-10,6.716-10,15-10,15,4.477,15,10" fill="#fff"/>
+          <ellipse id="楕円形_13" data-name="楕円形 13" cx="15" cy="10" rx="15" ry="10" transform="translate(14.25 12.75)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+          <path id="パス_327" data-name="パス 327" d="M37.993,42.649s-4.278-9.069,2.6-1.571c0,0-3.68-9.048,2.865-1.884,0,0-3.035-5.6,1.146-.753,0,0-6.932-12.988,2.579-1.7,0,0-3.525-6.938,1.648-1.083" fill="#fff"/>
+          <path id="パス_328" data-name="パス 328" d="M37.838,42.414s6.628,7.524,2.474-1.764c0,0,6.845,6.967,2.865-1.884,0,0,3.94,5.009,1.146-.753,0,0,9.174,11.515,2.579-1.695,0,0,4.971,5.989,1.648-1.083" fill="#fff"/>
+          <path id="パス_329" data-name="パス 329" d="M16.245,34.477s.552,9.233,14.59,10.186" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+          <path id="パス_330" data-name="パス 330" d="M11.994,37.635s.552,9.233,14.59,10.186" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

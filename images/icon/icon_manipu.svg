@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="100" viewBox="0 0 180 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="長方形_439" data-name="長方形 439" width="100.813" height="65.448" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon_manipu" transform="translate(782 -616)">
+    <rect id="長方形_1110" data-name="長方形 1110" width="180" height="100" transform="translate(-782 616)" fill="none"/>
+    <g id="マニピュレータ" transform="translate(-742 633)">
+      <path id="パス_333" data-name="パス 333" d="M7.229,54.9,0,53.591l7.19,3.552L3.852,59.056l6.936.9L13.3,63.967l2.618-2.286L22.8,65.448,19.569,61.32,26.8,62.631l-7.19-3.553,3.337-1.912-6.936-.9L13.5,52.254l-2.619,2.287L4,50.774Z" fill="#fff"/>
+      <rect id="長方形_435" data-name="長方形 435" width="39" height="15.999" transform="translate(61.813 46.764)" fill="#fff"/>
+      <rect id="長方形_436" data-name="長方形 436" width="9.688" height="44" transform="translate(76.125 7.046)" fill="#fff"/>
+      <rect id="長方形_437" data-name="長方形 437" width="44" height="9.688" transform="translate(33.625 7.046)" fill="#fff"/>
+      <path id="パス_334" data-name="パス 334" d="M18.3,54.073l25.017-16.6-8.415-8.415Z" fill="#fff"/>
+      <rect id="長方形_438" data-name="長方形 438" width="9.688" height="30.417" transform="translate(33.625 7.046)" fill="#fff"/>
+      <g id="グループ_76" data-name="グループ 76">
+        <g id="グループ_75" data-name="グループ 75" clip-path="url(#clip-path)">
+          <path id="パス_335" data-name="パス 335" d="M28.813,8.764s-1-7,7-6" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="パス_336" data-name="パス 336" d="M26.682,6.6s-1-7,7-6" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="パス_337" data-name="パス 337" d="M49.805,38.588s1,7-7,6" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="パス_338" data-name="パス 338" d="M51.936,40.755s1,7-7,6" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="パス_339" data-name="パス 339" d="M90.805,8.852s1-7-7-6" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+          <path id="パス_340" data-name="パス 340" d="M92.936,6.686s1-7-7-6" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

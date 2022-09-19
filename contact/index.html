@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BEX Co., Ltd.</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="">
+    <!-- Javascript for Bootstrap by CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Javascritp for YubinBango for auto-input by zipcode -->
+    <!-- Javascript for BEX -->
+    <link rel="stylesheet" href="../css/bootstrap-utilities.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- ヘッダー部分 -->
+<header>
+    <!-- ヘッダナビゲーション -->
+    <div class="bg-white fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-bex mt-2 border-bottom border-primary px-5">
+            <a class="navbar-brand img-fluid d-flex align-content-end" href="/">
+                <img class="d-inline-block" src="/images/logo/logo_bex.svg" alt="BEX Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon d-flex justify-content-end"></span>
+            </button>
+            <div class="collapse navbar-collapse text-primary bg-white" id="navbarSupportedContent">
+            </div>
+        </nav>
+        <!-- End -->
+    </div>
+</header>
+<main>
+    <!-- Body -->
+    <section class="mt-5">
+        <!-- Left Menu for Smartphone-->
+        <!-- Contents -->
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <!-- Main Contents -->
+                <div class="col-9">
+                    <div>
+                        <div class="mt-3 text-primary">
+                            <form class="ms-2 needs-validation h-adr" id="contactFormId" noValidate>
+                                <h2 class="mt-5 pt-3">Contact Information</h2>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col ps-4">
+                                            <label htmlFor="instituteId" class="form-label">Institution＊</label>
+                                            <input type="text" class="form-control" name="institute"
+                                                   id="instituteId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your institution.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 g-5">
+                                            <label htmlFor="lastNameId" class="form-label">Family Name＊</label>
+                                            <input type="text" class="form-control" name="lastName"
+                                                   id="lastNameId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your family name.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 g-5">
+                                            <label htmlFor="firstNameId" class="form-label">First Name＊</label>
+                                            <input type="text" class="form-control" name="firstName"
+                                                   id="firstNameId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your first name.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 g-5">
+                                            <label htmlFor="countryId" class="form-label">Country＊</label>
+                                            <input type="text" class="form-control p-region" name="country"
+                                                   id="countryId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your country.
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 g-5">
+                                            <label htmlFor="zipCodeId"
+                                                   class="form-label">Zip Code＊</label>
+                                            <input type="text" class="form-control d-inline p-postal-code"
+                                                   name="zipcode" id="zipCodeId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your zip code.
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 g-5">
+                                            <label htmlFor="stateId" class="form-label">State＊</label>
+                                            <input type="text" class="form-control p-region" name="state"
+                                                   id="stateId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your state.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 g-5">
+                                            <label htmlFor="cityId" class="form-label">City＊</label>
+                                            <input type="text" class="form-control p-locality" name="city"
+                                                   id="cityId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your city.
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 g-5">
+                                            <label htmlFor="streetId" class="form-label">Street＊</label>
+                                            <input type="text" class="form-control p-street-address"
+                                                   name="street" id="streetId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your city.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 g-5">
+                                            <label htmlFor="buildingId" class="form-label">Building</label>
+                                            <input type="text" class="form-control p-extended-address"
+                                                   name="building" id="buildingId" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 g-5">
+                                            <label htmlFor="telId"
+                                                   class="form-label">Phone Number＊</label>
+                                            <input type="tel" class="form-control" name="tel" id="telId"
+                                                   required />
+                                            <div class="invalid-feedback">
+                                                Please input your phone number.
+                                            </div>
+                                        </div>
+                                    <div class="row">
+                                        <div class="col g-5">
+                                            <label htmlFor="emailId" class="form-label">Email Address＊</label>
+                                            <input type="email" class="form-control" name="emailAddress"
+                                                   id="emailId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your email address.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col g-5">
+                                            <label htmlFor="emailConfirmId" class="form-label">
+                                                Email Address for confirmation＊</label>
+                                            <input type="email" class="form-control" name="emailAddressConfirm"
+                                                   id="emailConfirmId" required />
+                                            <div class="invalid-feedback">
+                                                Please input your email address for confirmation.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <label class="form-label mt-5 h2 d-block">Your interests＊</label>
+                                <div class="container h5">
+                                    <div class="row">
+                                        <div class="col-md-6 g-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="CUY21EDIT2" id="oligoId" name="interest" />
+                                                <label class="form-check-label"
+                                                       htmlFor="oligoId">CUY21EDIT II (Electroporator)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 g-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="GEB15" id="rnaId" name="interest" />
+                                                <label class="form-check-label"
+                                                       htmlFor="rnaId">Genome Editor (Electroporator)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 g-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="GEBPlus" id="peptideId" name="interest" /> <label class="form-check-label"
+                                                       htmlFor="peptideId">Genome Editor Plus (Electroporator)</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 g-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="electrode4gonad"
+                                                       id="antibodyId" name="interest" />
+                                                <label class="form-check-label"
+                                                       htmlFor="antibodyId">Electrode for i-GONAD</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 g-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="electrode4cell" id="proteinId" name="interest" />
+                                                <label class="form-check-label"
+                                                       htmlFor="proteinId">Electrode for cells</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 g-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="ElectrodeOther"
+                                                       id="cellRelatedId" name="interest" />
+                                                <label class="form-check-label"
+                                                       htmlFor="cellRelatedId">Other Electrode</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 g-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="MouseGoRound" id="geneAnalysisId" name="interest" />
+                                                <label class="form-check-label"
+                                                       htmlFor="geneAnalysisId">Mouse Go Round</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 g-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox"
+                                                       value="OLFAS" id="geneEngineeringId" name="interest" />
+                                                <label class="form-check-label"
+                                                       htmlFor="geneEngineeringId">Fluorescene Adaptor (OLFAS)</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 g-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="Others"
+                                                       id="otherId" name="interest" />
+                                                <label class="form-check-label"
+                                                       htmlFor="otherId">Other</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input type="text" class="form-control visually-hidden"
+                                               id="interestValidationId" />
+                                        <div class="invalid-feedback fs-5 mt-4">
+                                            Please choose your interests.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col g-5">
+                                            <label htmlFor="contentId" class="form-label">
+                                                Please enter any questions or comments below＊
+                                            </label>
+                                            <textarea class="form-control" name="content" id="contentId" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center m-5">
+                                    <button class="btn btn-primary text-white" id="submitButtonId" type="submit">
+                                        Submit
+                                    </button>
+                                    <button class="btn btn-primary text-white visually-hidden"
+                                            id="submitLoadingId" disabled>
+                                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                        Loading...
+                                    </button>
+                                </div>
+                    </form>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="bg-info pt-4 pb-4">
+    <!-- Responsive -->
+    <!-- < 576 px: 1, >= 992 px: 3 -->
+    <div class="container text-primary">
+        <div class="row row-cols-1 row-cols-lg-3">
+            <div class="col mt-3">
+                <!-- Grid for Information Column in Footer -->
+                <div class="container">
+                    <!-- < 576 px: 1, >= 576px: 2 -->
+                    <div class="row row-cols-1 row-cols-sm-2">
+                        <div class="col">
+                            CONTACT US
+                        </div>
+                        <div class="col-sm-auto">
+                            <ul>
+                                <li>+81 3 5375 1071 (Japanese)</li>
+                                <li>+81 3 6387 3633 (English)</li>
+                                <li>info@bexnet.co.jp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <!-- Gred for Information Column in Footer -->
+                <div class="container">
+                    <!-- < 576 px: 1, >= 576px: 2 -->
+                    <div class="row row-cols-1 row-cols-sm-2">
+                        <div class="col">
+                            BUSINESS
+                        </div>
+                        <div class="col-sm-auto">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Product</a></li>
+                                <li><a href="#">Catalog</a></li>
+                                <li><a href="#">Publication</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-3">
+                <!-- Gred for Information Column in Footer -->
+                <div class="container">
+                    <!-- < 576 px: 1, >= 576px: 2 -->
+                    <div class="row row-cols-1 row-cols-sm-2">
+                        <div class="col">
+                            INFORMATION
+                        </div>
+                        <div class="col-sm-auto">
+                            <ul>
+                                <li><a href="#">Site Map</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-white bg-primary pt-2 pb-2">
+        <p class="d-flex justify-content-start m-4">©2022 BEX Co., Ltd.</p>
+    </div>
+
+</footer>
+</body>
+<script src="/js/bexscript.js" charset="UTF-8"></script>
+</html>

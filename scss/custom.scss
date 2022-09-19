@@ -1,0 +1,633 @@
+/*
+Customization for Bex Bootstrap
+URL: https://getbootstrap.jp/docs/5.0/customize/sass/
+------- Structure ----------
+1. Custom SCSS
+2. Bootstrap Original SCSS
+3. Custom SCSS for Element
+*/
+
+
+/************  1. Custom SCSS **********/
+
+/* custom for BEX Web */
+/* customization for variables */
+/* For element custom, please go to ./_000bexcustom4element.scss */
+
+// Bootstrap Icon by CDN
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+
+// Google Font by CDN
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Noto+Sans+JP&display=swap');
+
+// RFS
+@import "../node_modules/rfs/scss";
+
+// Custom Font in L578 in _variables.scss
+//$font-family-sans-serif:      system-ui, -apple-system, Meiryo, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+//$font-family-sans-serif:      Arial, "Noto Sans Javanese", system-ui, -apple-system, Meiryo, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+//$font-family-sans-serif:      "Noto Sans JP", Meiryo, "Yu Gothic", -apple-system, BlinkMacSYstemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+//$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, "游ゴシック体", "Yu Gothic", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+$font-family-sans-serif:      "Yu Gothic", -apple-system, BlinkMacSYstemFont, "Helvetica Neue", "游ゴシック Medium", YuGothic, YuGothicM, "Hragino Kaku Gothic ProN", Meiryo, sans-serif !default;
+
+// Trial
+$olivedrab:          #665a1a !default; // Olive drab: 8881
+$koge-cha:         #6f4d3e !default; // Koge-Cha: 8882
+$cholate:         #6c3524 !default; // Chocolate: 8883
+$btx-blue:       #160A8B !default; // BTX Color: 8884
+$makkuro:        #000000 !default; // Black: 8885
+$koi-ai:  #0f2350; // Koi-Ai: 8886
+$kurotobi: #432f2f;  // Kuro-tobi: 8887
+$bottle-Green:  #004d25; // Bottle-green: 8882
+$midnight-blue: #001e43;  // Midnight-blue: 8889
+
+// Custom Color in L40 in _variables.scss
+$blue: #2699FB !default;  // BEX Main Blue Color
+//$blue: $midnight-blue !default;  // BEX Main Blue Color
+$blue-dark: #004BB1 !default;   // Added for Card in TOP page
+$blue-light: #F1F9FF !default;   // Added for Secondary Color in TOP page
+$gray-light: #98A6B5 !default;   // Added for Card in TOP page
+
+//$gray-600: #004BB1 !default;
+
+$primary:       $koi-ai;
+//$primary:       $blue;
+//$secondary:     $blue-light !default; // Added for Secondary Color
+$secondary:     $blue-dark !default; // Added for Secondary Color for Card in TOP Page
+$success:       $gray-light !default; // Added for Third Color for Card in TOP Page
+$info:          $blue-light !default; // Added for Fourth Color for Card in TOP Page
+$warning:       $blue !default; // Added for BEX color
+
+
+
+
+// Around L107 in variables.scss
+$blue-light-100: tint-color($blue-light, 80%) !default;
+$blue-light-200: tint-color($blue-light, 60%) !default;
+$blue-light-300: tint-color($blue-light, 40%) !default;
+$blue-light-400: tint-color($blue-light, 20%) !default;
+$blue-light-500: $blue-light !default;
+$blue-light-600: shade-color($blue-light, 20%) !default;
+$blue-light-700: shade-color($blue-light, 40%) !default;
+$blue-light-800: shade-color($blue-light, 60%) !default;
+$blue-light-900: shade-color($blue-light, 80%) !default;
+
+// Around L207 in _variables.scss
+$blues-light: (
+        "blue-light-100": $blue-light-100,
+        "blue-light-200": $blue-light-200,
+        "blue-light-300": $blue-light-300,
+        "blue-light-400": $blue-light-400,
+        "blue-light-500": $blue-light-500,
+        "blue-light-600": $blue-light-600,
+        "blue-light-700": $blue-light-700,
+        "blue-light-800": $blue-light-800,
+        "blue-light-900": $blue-light-900
+) !default;
+
+/*
+// Import for Custom of SCSS
+// URL: https://getbootstrap.jp/docs/5.0/customize/sass/#maps-and-loops
+// Required
+@import "../scss/variables";
+@import "../scss/mixins";
+
+// Optional Bootstrap components here
+@import "../scss/root";
+@import "../scss/reboot";
+@import "../scss/type";
+
+// custom color map
+// URL: https://getbootstrap.jp/docs/5.0/customize/sass/#maps-and-loops
+$bex-colors: (
+        //"primary": $blue,
+        "bex-dark-color":       $blue-dark
+);
+// Merge it to "theme-color in L82 in _variables.scss
+$theme-colors: map-merge($theme-colors, $bex-colors);
+ */
+
+
+/************  2. Bootstrap Original SCSS **********/
+@import "./bootstrap";
+
+// Font size in L587 and L608 in _variables.scss
+//$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1.5vw !default; // Assumes the browser default, typically `16px`
+$h7-font-size:                $font-size-base * 0.85 !default;
+$font-sizes: (
+        1: $h1-font-size,
+        2: $h2-font-size,
+        3: $h3-font-size,
+        4: $h4-font-size,
+        5: $h5-font-size,
+        6: $h6-font-size,
+        7: $h7-font-size
+) !default;
+
+// Custom Opacity in L555 in _utilities.scss
+$utilities: (
+        "bg-opacity-bex": (
+                property: opacity,
+          //css-var: true,
+                class: bg-opacity-bex,
+                values: (
+                        10: .1,
+                        25: .25,
+                        50: .5,
+                        75: .75,
+                        80: .8,
+                        90: .9,
+                        95: .95,
+                        100: 1
+                )
+        )
+);
+
+// Font size
+/*
+body {
+  font-size: 1rem;
+}
+@include media-breakpoint-down(sm) {
+  body {
+    font-size: 1rem;
+  }
+}
+ */
+
+// Media Query by Breakpoint of Bootstrap
+main {
+  margin-left:15vw;
+  margin-right:15vw;
+}
+@include media-breakpoint-down(sm){
+  main {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+}
+
+
+// pseudo element of Arrow Icon in News Card
+// SVG for ICON --> https://blog.mktia.com/use-svg-in-pseudo-element-of-css/
+.arrow_right_4_after_p {
+  p {
+    &::after {
+      content: "";
+      background-image: url('/images/icon/arrow_right.svg');
+      background-repeat: no-repeat;
+      // background-color: #00ffff;
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      vertical-align: text-top;
+      padding: 0 0 0 0;
+      // -webkit-mask: url("/images/icon/arrow_1.svg");
+      // mask: url("/images/icon/arrow_1.svg");
+      // -webkit-mask-size: cover;
+      // mask-size: cover;
+    }
+  }
+}
+
+.arrow_left_4_before_p {
+  p {
+    &::before {
+      content: "";
+      background-image: url('/images/icon/arrow_left.svg');
+      // background-color: #00ffff;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      vertical-align: text-top;
+      padding: 0 1.5rem 0 0;
+
+      //padding: 0 ;
+      // -webkit-mask: url("/images/icon/arrow_1.svg");
+      // mask: url("/images/icon/arrow_1.svg");
+      // -webkit-mask-size: cover;
+      // mask-size: cover;
+    }
+  }
+}
+
+/* TOPページのナビゲーションBarのドロップダウンの背景色変更 */
+.dropdown-menu-top-header-inquiry{
+  background-color: #2699FB;
+}
+
+/* TOPページのナビゲーションBarのテキスト間を調整 */
+
+/* ICON リスト for Header */
+.header-right-icon {
+  display: flex;
+  //flex-wrap: wrap;
+  align-items: center;
+  a {
+    display: block;
+    width: 60px;
+    height: 55px;
+    position: relative;
+    &::before{
+      content: "";
+      display: block;
+      //width: 50px;
+      //height: 50px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center center;
+      position: absolute;
+      background: #ffffff;
+      top: 50%;
+      //top: 70%;
+      //left: 50%;
+      left: 5%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .icon_iso9001 {
+    a {
+      &::before {
+        //content: "";
+        background: url('/images/icon/logo_ISO.png');
+        width: 73px;
+        height: 55px;
+        //display: inline-block;
+        vertical-align: middle;
+        //margin-left:-1rem;
+      }
+    }
+  }
+  .icon_youtube {
+    a {
+      &::before {
+        //content: "";
+        background: url('/images/icon/icon_youtube.svg');
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        //display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .icon_twitter {
+    a {
+      &::before {
+        //content: "";
+        background: url('/images/icon/icon_twitter.svg');
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+        //display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  .icon_lang {
+    a {
+      &::before {
+        //content: "";
+        background: url('/images/icon/icon_lang.svg');
+        background-repeat: no-repeat;
+        width: 65px;
+        height: 65px;
+        //display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+// Hamburger Menu with BEX's color by @extend of navbar-light in navbar.scss (L237)
+$navbar-bex-color:                rgba($blue, .55) !default;
+$navbar-bex-hover-color:          rgba($blue, .7) !default;
+$navbar-bex-active-color:         rgba($blue, .9) !default;
+$navbar-bex-disabled-color:       rgba($blue, .3) !default;
+//$navbar-bex-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-bex-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-bex-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba%2838, 153, 251, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-bex-toggler-border-color: rgba($blue, .1) !default;
+.navbar-bex {
+  //@extend .navbar-light;
+  height:6rem;
+  margin-top:0rem !important;
+  padding-bottom: 0rem !important;
+  padding-top: 0rem !important;
+  border-bottom: 0.1rem solid;
+  border-color: $primary;
+
+  .navbar-toggler {
+    color: $blue !important;
+    border-color: $blue !important;
+  }
+  .navbar-toggler-icon {
+    //background-image: escape-svg($navbar-bex-toggler-icon-bg) !important;
+    background-image: $navbar-bex-toggler-icon-bg !important;
+  }
+  .navbar-bex-container{
+    //height:100%;
+    //border-bottom: 0.1rem solid;
+    //border-color: $primary;
+  }
+}
+
+// Right Border for Section in Navigation bar
+@media screen and (min-width: 992px){
+  .navbar-menu-right-border {
+    position: relative;
+
+    ::after {
+      content: '';
+      width: 0.2rem;
+      height: 3rem;
+      position: absolute;
+      background-color: $primary;
+      right: 0rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+
+
+// pseudo elements for Product List in TOP
+.bex-list-prefix {
+  li {
+    ::before{
+      content: "";
+      background: url('/images/icon/icon_list_prefix.svg');
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      vertical-align: middle;
+    }
+  }
+}
+header{
+  height:0px !important;
+}
+.main-head {
+  padding-top:6rem;
+}
+
+// Card Body for Product List in TOP, imitated to in L46 in _card.scss
+.card-body-bex {
+  flex: 1 1 auto;
+  padding: 0.5rem 0 0 0;
+}
+
+/*
+$black:    #000 !default;
+$border-width:                1px !default;
+$card-border-width:                 $border-width !default;
+$card-border-color:                 rgba($black, .125) !default;
+*/
+.card-footer-bex {
+  @extend .card-footer;
+  padding: 0 0;
+  //color: $card-cap-color;
+  //background-color: $card-cap-bg;
+  //border-top: $card-border-width solid $card-border-color;
+  /*
+  &:last-child {
+    //@include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+  }
+ */
+}
+
+.product-menu{
+  //margin: 1rem 0 1rem -1.5rem;
+  margin-left: -0.5rem;
+  list-style-type: none;
+  &::before {
+    margin-right: 0.5rem;
+    content: url("/images/icon/icon_dot_menu.svg");
+  }
+}
+
+.product-menu-detail {
+  ul {
+    //padding-left: 2rem;
+    //list-style-position: outside;
+  }
+  li{
+    //color: #7FC4FD;
+    color: $primary;
+    list-style-type: none;
+    //list-style-position: outside;
+    text-indent: -1.5rem;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    &::before {
+      margin-right: 0.5rem;
+      content: url('/images/icon/icon_list_prefix_blue.svg');
+    }
+  }
+}
+
+.news-list {
+  li {
+    margin: 2rem 0;
+    padding-left: 1rem;
+    text-indent: -1rem;
+    a {
+      color: #7F7F7F;
+    }
+  }
+}
+
+// Custom accordion-border-color in L1282 in _utilities.scss
+$accordion-border-color: white;
+//$accordion-color: $blue !default;
+$accordion-color: $primary !default;
+
+.list_main{
+  li {
+    margin: 0.5rem 0;
+  }
+}
+
+// BEX Table Decoration
+.tableSet01 {
+  border: 1px $blue solid;
+  //font-family: Arial, "Noto Sans Javanese";
+  th {
+    background-color: $blue;
+    color: white;
+    border: 1px white solid;
+    padding: 0.5rem;
+  }
+  td {
+    backbround-color: white;
+    color: #7F7F7F;
+    border: 1px $blue solid;
+    padding: 0.5rem;
+  }
+  .table-width-7{
+    width: 7rem;
+  }
+}
+
+.product-lineClass {
+  border-color: $gray-light;
+  display:none;
+  //z-index: 10000;
+  transform:translateY(0.5rem);
+}
+
+/* Loading  */
+.loading {
+  position: fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background-color:#000000;
+  opacity:0.8;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 999;
+  user-select:none;
+}
+
+
+/************  3. Custom SCSS for Element **********/
+
+/* custom for BEX Web to apply Element */
+/**
+This scss is applied in the end of the line in 'bootstrap.scss'
+ */
+
+$tarquoise: #30D5C8 !default; // complementary color
+// Add color scheme:
+// URL: https://getbootstrap.jp/docs/5.0/customize/sass/#maps-and-loops
+$custom-colors: (
+        "tarquoise": $tarquoise
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Pseudo Elements for Content page
+h1 {
+  //color: $blue;
+  color: $koi-ai;
+  padding: 1rem 0;
+  font-weight: bolder;
+  &::before {
+    margin-right: 1rem;
+    content: url("/images/icon/icon_vertical.svg");
+    vertical-align: middle;
+  }
+}
+/*
+h2 {
+  color: $blue;
+  padding: 0.8rem 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  //background-image: linear-gradient(90deg, #46aadc 0 20%, #dedede 20%);
+  background-image: linear-gradient(90deg, #7FC4FD 0 20%, #dedede 20%);
+  //border-radius: 80% 50% 60% 5%/80% 75% 15% 75%;
+  border-radius:0.5rem 0.5rem 0.5rem 0.5rem;
+  background-size: 100% 5%;
+  background-repeat: ;
+  background-position: top;
+  background-position: bottom;
+  font-weight: bolder;
+  //font-size: 26px;
+  /*
+  URL: https://pa-tu.work/blog/heading-under-line
+}
+*/
+h2 {
+  //URL: https://jajaaan.co.jp/css/css-headline/
+  color: $primary;
+  position: relative;
+  padding: 1rem 0.5rem;
+  margin: 2rem 0rem;
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.3rem;
+    content: '';
+    background-image: linear-gradient(90deg, #7FC4FD 0 20%, #dedede 20%);
+    border-radius:0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.3rem;
+    content: '';
+    background-image: linear-gradient(90deg, #7FC4FD 0 20%, #dedede 20%);
+    border-radius:0.5rem 0.5rem 0.5rem 0.5rem;
+  }
+}
+
+/*
+h3 {
+  color: $primary;
+  padding: 1rem 0;
+  &::before {
+    margin-right: 0.5rem;
+    content: url("/images/icon/icon_check2-square.svg");
+    background-repeat: no-repeat;
+  }
+  //padding: 2.5rem 0 1rem 0;
+}
+ */
+
+// https://saruwakakun.com/html-css/reference/h-design
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  padding: 0.25em 1em;
+  display: inline-block;
+  border-top: solid 2px $blue;
+  border-bottom: solid 2px $blue;
+}
+h3:before, h3:after {
+    content: '';
+    position: absolute;
+    top: -7px;
+    width: 2px;
+    height: -webkit-calc(100% + 14px);
+    height: calc(100% + 14px);
+    background-color: $blue;
+}
+h3:before {
+  left: 7px;
+}
+h3:after {
+  right: 7px;
+}
+
+
+h4 {
+  color: $primary;
+  padding: 1rem 0;
+  &::before {
+    margin-right: 0.5rem;
+    //content: url("/images/icon/icon_quote.svg");
+    content: url("/images/icon/icon_check2-square.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+// Custom accordion-border-color in L1282 in _utilities.scss
+$accordion-border-color: white;
+$accordion-color: $blue !default;
+
+
+
+
+

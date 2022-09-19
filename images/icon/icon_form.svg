@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+  <g id="icon_form" transform="translate(465 125)">
+    <rect id="長方形_1104" data-name="長方形 1104" width="35" height="35" transform="translate(-465 -125)" fill="none"/>
+    <g id="問合せフォーム" transform="translate(-666.984 -892.979)">
+      <g id="グループ_165" data-name="グループ 165">
+        <path id="パス_431" data-name="パス 431" d="M225.654,771.979H213.313a4.335,4.335,0,0,0-4.329,4.33v17.15a4.334,4.334,0,0,0,4.329,4.329h11.033l.47-.469,4.7-4.7.469-.47v-15.84A4.336,4.336,0,0,0,225.654,771.979Zm2.727,19.507h-2.427a2.272,2.272,0,0,0-2.272,2.272v2.427H213.313a2.727,2.727,0,0,1-2.726-2.726v-17.15a2.727,2.727,0,0,1,2.726-2.727h12.341a2.727,2.727,0,0,1,2.727,2.727v15.177Z" fill="#fff" stroke="rgba(112,112,112,0)" stroke-width="1"/>
+      </g>
+      <path id="パス_432" data-name="パス 432" d="M213.362,778.422Z" fill="#fff" stroke="rgba(112,112,112,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.537"/>
+      <path id="パス_433" data-name="パス 433" d="M213.362,782.894Z" fill="#fff" stroke="rgba(112,112,112,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.537"/>
+      <path id="パス_434" data-name="パス 434" d="M213.362,788.016Z" fill="#fff" stroke="rgba(112,112,112,0)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.537"/>
+    </g>
+  </g>
+</svg>

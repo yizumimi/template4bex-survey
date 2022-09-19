@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="fa55a332-59a3-4726-a314-af293f202b00" name="https://sharing.bexnet.co.jp/">
+        <fileTransfer accessType="SFTP" host="115.179.110.102" port="9922" sshConfigId="3c2ac3e6-bb97-4743-80b6-22eb66275b00" sshConfig="root@115.179.110.102:9922 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
